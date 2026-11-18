@@ -6,7 +6,7 @@
     "platingCost": 1.2,
     "wastage": 1.1,
     "overhead": 0.62,
-    "conversion": 75,
+    "conversion": 80,
     "profitMargin": 1.25,
     "paintConversion": 80,
     "piecesPerGross": 144
