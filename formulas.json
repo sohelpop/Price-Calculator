@@ -1,14 +1,28 @@
-
 {
-  "version": 1,
+  "version": 3,
   "alloy": {
+    "expression": "weight * rmCost * platingCost * wastage / overhead / conversion * profitMargin + paint / paintConversion",
     "rmCost": 0.44,
     "platingCost": 1.2,
     "wastage": 1.1,
     "overhead": 0.62,
-    "conversion": 80,
+    "conversion": 75,
     "profitMargin": 1.25,
     "paintConversion": 80,
+    "piecesPerGross": 144
+  },
+  "shank": {
+    "expression": "brass * brassRmCost * brassPlatingCost / brassOverhead / conversion + alloy * alloyRmCost * alloyPlatingCost * alloyWastage / alloyOverhead / alloyConversion * profitMargin + (paint + ss + nylon + nail) / conversion",
+    "brassRmCost": 0.62,
+    "brassPlatingCost": 1.2,
+    "brassOverhead": 0.62,
+    "alloyRmCost": 0.44,
+    "alloyPlatingCost": 1.2,
+    "alloyWastage": 1.05,
+    "alloyOverhead": 0.62,
+    "alloyConversion": 75,
+    "profitMargin": 1.25,
+    "conversion": 80,
     "piecesPerGross": 144
   }
 }
