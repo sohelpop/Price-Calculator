@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "alloy": {
     "expression": "weight * rmCost * platingCost * wastage / overhead / conversion * profitMargin + paint / paintConversion",
     "rmCost": 0.44,
@@ -33,6 +33,20 @@
     "aluminumRmCost": 0.36,
     "aluminumPlatingCost": 1.0,
     "aluminumMargin": 1.25,
+    "conversion": 80,
+    "piecesPerGross": 144
+  },
+  "rivet": {
+    "expression": "brass * brassRmCost * brassPlatingCost / brassOverhead / conversion + alloy * alloyRmCost * alloyPlatingCost * alloyWastage / alloyOverhead / alloyConversion * profitMargin + (paint + nail) / conversion",
+    "brassRmCost": 0.62,
+    "brassPlatingCost": 1.2,
+    "brassOverhead": 0.62,
+    "alloyRmCost": 0.44,
+    "alloyPlatingCost": 1.2,
+    "alloyWastage": 1.05,
+    "alloyOverhead": 0.62,
+    "alloyConversion": 75,
+    "profitMargin": 1.25,
     "conversion": 80,
     "piecesPerGross": 144
   }
